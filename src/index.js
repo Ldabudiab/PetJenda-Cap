@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router } from "react-router-dom";
+import {PetJenda} from './components/PetJenda';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <PetJenda />
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

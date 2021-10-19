@@ -1,0 +1,50 @@
+.task-card  {
+    
+    width: 100%;
+    background-color: rgb(164, 80, 241);
+    color: white;
+    padding: 1em;
+    
+}
+
+.card-holder{
+
+   border-radius: 10px;
+    margin-top: 100px;
+    background-color: #ff4800;
+    height: 200px;
+    padding-bottom: 25px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button-7{
+    border-radius: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+}
+
+.card-info{
+    border-radius: 15px;
+    background-color: #ffaa00;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center; 
+    
+    
+}
+
+.cardHolderHeader{
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.complete{
+
+    border-radius: 25px;
+}

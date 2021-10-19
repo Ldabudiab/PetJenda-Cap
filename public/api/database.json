@@ -1,0 +1,49 @@
+{
+  "users": [
+    {
+      "email": "ldabudiab@gmail.com",
+      "name": "Leith Abudiab",
+      "id": 1
+    }
+  ],
+  "meds": [],
+  "messages": [],
+  "tasks": [
+    {
+      "name": "Breakfast",
+      "date": "",
+      "status": false,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Dinner",
+      "date": "",
+      "status": false,
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "name": "Medication",
+      "date": "",
+      "status": false,
+      "userId": 1,
+      "id": 3
+    }
+  ],
+  "friends": [],
+  "pets": [
+    {
+      "name": "jango",
+      "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "poopy",
+      "img": "https://www.google.com/search?q=dog&rlz=1C1VDKB_enUS927US927&sxsrf=AOaemvKNcCYzmzqBD75C8TzPvcKAblQRSQ:1634662571163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwienYbP-NbzAhXNT98KHfEDAl4Q_AUoAXoECAEQAw&biw=900&bih=1527&dpr=1#imgrc=btQ8-aZ4x2YyMM",
+      "userId": 1,
+      "id": 2
+    }
+  ]
+}

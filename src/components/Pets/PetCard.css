@@ -1,0 +1,19 @@
+.card__content--image img {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.card__content--image{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.pet-name{
+
+    display: flex;
+    justify-content: center;
+}
