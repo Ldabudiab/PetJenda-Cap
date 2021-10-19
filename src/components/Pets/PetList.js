@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { PetCard } from "./PetCard";
 import { getAllPets, deletePets, update } from "../../modules/PetManager";
 import { useHistory } from "react-router";
+import "./PetCard.css" 
 
 export const PetList = () => {
 
@@ -46,8 +47,6 @@ const handleDeletePet = id => {
         <div id="pet-card-holder">
         { 
         pets.map(pet => <PetCard key={pet.id} pet={pet} handleDeletePet={handleDeletePet}/>)}
-
-
         </div>
         </div>
         

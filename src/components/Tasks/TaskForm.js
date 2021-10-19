@@ -26,7 +26,7 @@ export const TaskForm = () => {
     const handleClickSaveTask = (event) => {
 		event.preventDefault()
             addTask(task)
-                .then(() => history.push("/"))
+                .then(() => history.push("/tasks"))
     }
      
     return (

@@ -29,6 +29,13 @@
       "status": false,
       "userId": 1,
       "id": 3
+    },
+    {
+      "name": "scoop poop",
+      "date": "",
+      "status": false,
+      "userId": 1,
+      "id": 4
     }
   ],
   "friends": [],
@@ -40,8 +47,8 @@
       "id": 1
     },
     {
-      "name": "poopy",
-      "img": "https://www.google.com/search?q=dog&rlz=1C1VDKB_enUS927US927&sxsrf=AOaemvKNcCYzmzqBD75C8TzPvcKAblQRSQ:1634662571163&source=lnms&tbm=isch&sa=X&ved=2ahUKEwienYbP-NbzAhXNT98KHfEDAl4Q_AUoAXoECAEQAw&biw=900&bih=1527&dpr=1#imgrc=btQ8-aZ4x2YyMM",
+      "name": "spot",
+      "img": "",
       "userId": 1,
       "id": 2
     }

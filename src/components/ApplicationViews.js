@@ -6,7 +6,6 @@ import { Register } from "./auth/Register"
 import { TaskList } from "./Tasks/TaskList"
 import { TaskForm } from "./Tasks/TaskForm"
 import { Redirect } from "react-router"
-import { TaskEditForm } from "./Tasks/TaskEditForm"
 import { PetForm } from "./Pets/PetForm"
 import { PetList } from "./Pets/PetList"
 
@@ -26,18 +25,17 @@ export const ApplicationViews = () => {
 
           <Route exact path="/">
               
-             
               <PetList />
-             
+
           </Route>
           
+
+
 
           <Route exact path="/tasks">
             {/* Render the component for the user's tasks */}
             {isAuthenticated ? <TaskList /> : <Redirect to="/login" />}
          </Route>
-
-        
             
           <Route exact path="/pets/create">
               <PetForm />
