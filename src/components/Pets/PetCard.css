@@ -17,3 +17,15 @@
     display: flex;
     justify-content: center;
 }
+
+.delete-buttons{
+
+    display: flex;
+    justify-content: center;
+}
+
+.back-button{
+
+    padding: 5px;
+    border-radius: 10px;
+}

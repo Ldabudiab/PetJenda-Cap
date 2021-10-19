@@ -32,6 +32,13 @@ export const TaskList = () => {
 
     return (
 		<>
+          <div className="back-button">
+            <button
+            className="back-button"
+            onClick={() => {history.push("/")}}>
+				Home
+            </button>
+        </div>
         <div className="card-holder">
             <div className="cardHolderHeader">
 			<button type="button"
@@ -46,6 +53,7 @@ export const TaskList = () => {
 
 		</div>
         </div>
+      
 		</>
 	);
 };
