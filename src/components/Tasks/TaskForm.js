@@ -5,8 +5,9 @@ import {  addTask } from '../../modules/TaskManager'
 export const TaskForm = () => {
     const [task, setTask] = useState({
         name: "",
-        date: "",
+        petId: "",
         status: false
+        
     });
 
     const history = useHistory();

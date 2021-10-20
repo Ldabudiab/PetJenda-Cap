@@ -32,7 +32,7 @@ export const ApplicationViews = () => {
 
 
 
-          <Route exact path="/tasks">
+          <Route exact path="/tasks/:petId">
             {/* Render the component for the user's tasks */}
             {isAuthenticated ? <TaskList /> : <Redirect to="/login" />}
          </Route>

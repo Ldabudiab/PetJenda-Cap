@@ -4,7 +4,7 @@ import { taskComplete } from "../../modules/TaskManager"
 
 import "./Task.css"
 
-export const TaskCard = ({ task, reload, handleDeleteTask}) => {
+export const TaskCard = ({ task, reload, handleDeleteTask, pet}) => {
     const history = useHistory();
 
     const currentUser = parseInt(sessionStorage.getItem("petjenda_user"))
@@ -14,12 +14,17 @@ export const TaskCard = ({ task, reload, handleDeleteTask}) => {
         taskComplete(task).then(reload)
     }
     
+    console.log(pet.id)
+
+    if (task.petId === pet.id){
+
     return (
 
+        
         <div className="card">
             <div className="card-info"> 
                 <h3>{(task.name)}</h3>
-                {task.userId === currentUser && <div className="complete"><label for="complete">complete
+                {task.userId === currentUser && <div className="complete"><label htmlFor="complete">complete
                 <input onChange={checkChange} type="checkbox" className="complete" id="complete"></input>
                 </label> </div> }
                 {task.userId === currentUser && <div className="buttons">
@@ -29,4 +34,8 @@ export const TaskCard = ({ task, reload, handleDeleteTask}) => {
             </div> 
         </div>
     );
+} else{
+
+    return null
+}
 }
