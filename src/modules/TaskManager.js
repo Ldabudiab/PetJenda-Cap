@@ -6,7 +6,7 @@ export const getTaskById = (taskId) => {
 }
 
 export const getAllTasks = () => {
-	return fetch(`${remoteURL}`)
+	return fetch(`${remoteURL}?_expand=pet`)
 		.then(res => res.json())
 }
 
@@ -46,4 +46,12 @@ export const update = (editedTask) => {
 		},
 		body: JSON.stringify(editedTask)
 	}).then(data => data.json());
+}
+
+export const getTaskByPetId = (petId) => {
+
+	return fetch (`${remoteURL}?petId=${petId}&_expand=pet`)
+	.then(response => response.json())
+
+
 }

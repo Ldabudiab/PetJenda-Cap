@@ -7,11 +7,13 @@ export const PetCard = ({pet, handleDeletePet}) => {
 
     console.log(pet)
 
+    const petLink = `/tasks/${pet.id}`
+
     return (
         <>
         <div className="card__content--image">
             <div>
-           <NavLink to="/tasks" className="cat-pic"><a href=""><img className="cat-nav" src={cat} alt="Profile Picture"/></a></NavLink> 
+           <NavLink to={petLink} className="cat-pic"><a href=""><img className="cat-nav" src={cat} alt="Profile Picture"/></a></NavLink> 
             </div>
             
         </div>
