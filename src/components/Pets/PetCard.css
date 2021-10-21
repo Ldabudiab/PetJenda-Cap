@@ -29,3 +29,11 @@
     padding: 5px;
     border-radius: 10px;
 }
+
+#pet-card-holder{
+    background-color: white;
+    width: 600px;
+    margin-left: 650px;
+    border-radius: 15px;
+    padding: 25px;
+}
