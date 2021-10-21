@@ -11,7 +11,7 @@
 
    border-radius: 10px;
     margin-top: 100px;
-    background-color: #ff4800;
+   
     height: 200px;
     padding-bottom: 25px;
 }
@@ -19,6 +19,10 @@
 .container-cards{
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    margin: 100px;
+    padding: 50px;
+    border-radius: 20px;
 }
 .button-7{
     border-radius: 10px;
@@ -29,10 +33,11 @@
 
 .card-info{
     border-radius: 15px;
-    background-color: #ffaa00;
+    border: solid rgb(164, 80, 241);
+    background-color: white;
     padding: 30px;
-    margin-bottom: 20px;
     text-align: center; 
+    width: 200px;
     
     
 }
@@ -47,4 +52,17 @@
 .complete{
 
     border-radius: 25px;
+    margin-left: 5px;
+}
+
+.dashboard{
+
+    background-color: blueviolet ;
+}
+
+.button-delete{
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: blueviolet;
+    color: white;
 }

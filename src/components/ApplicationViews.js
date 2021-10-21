@@ -4,7 +4,7 @@ import { PetCard } from "./Pets/PetCard"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import { TaskList } from "./Tasks/TaskList"
-import { TaskForm } from "./Tasks/TaskForm"
+
 import { Redirect } from "react-router"
 import { PetForm } from "./Pets/PetForm"
 import { PetList } from "./Pets/PetList"
@@ -40,10 +40,6 @@ export const ApplicationViews = () => {
           <Route exact path="/pets/create">
               <PetForm />
           </Route>
-
-          <Route exact path="/tasks/create">
-            <TaskForm />
-        </Route>
 
           <Route path="/login">
             <Login setAuthUser={setAuthUser} />

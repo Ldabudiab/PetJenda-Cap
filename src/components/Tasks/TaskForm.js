@@ -2,10 +2,10 @@ import React, { useState} from "react";
 import { useHistory } from "react-router";
 import {  addTask } from '../../modules/TaskManager'
 
-export const TaskForm = () => {
+export const TaskForm = ({toggle, reload, pet}) => {
     const [task, setTask] = useState({
         name: "",
-        petId: "",
+        petId: parseInt(pet),
         status: false
         
     });
@@ -27,7 +27,8 @@ export const TaskForm = () => {
     const handleClickSaveTask = (event) => {
 		event.preventDefault()
             addTask(task)
-                .then(() => history.push("/tasks"))
+                .then(toggle)
+                .then(reload)
     }
      
     return (
