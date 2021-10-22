@@ -2,6 +2,7 @@ import React from "react";
 import "./PetCard.css" 
 import { NavLink } from "react-router-dom";
 import cat from "../../images/cat.jpg"
+import { Image } from "cloudinary-react";
 
 export const PetCard = ({pet, handleDeletePet}) => {
 
@@ -13,7 +14,13 @@ export const PetCard = ({pet, handleDeletePet}) => {
         <>
         <div className="card__content--image">
             <div>
-           <NavLink to={petLink} className="cat-pic"><a href=""><img className="cat-nav" src={cat} alt="Profile Picture"/></a></NavLink> 
+           <NavLink to={petLink} className="cat-pic"><a href="">
+          <img
+          src={pet.img}
+          alt="profile pic"
+          className="profilePic"
+        />
+        </a></NavLink> 
             </div>
             
         </div>
