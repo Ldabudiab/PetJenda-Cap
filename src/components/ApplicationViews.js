@@ -8,6 +8,7 @@ import { TaskList } from "./Tasks/TaskList"
 import { Redirect } from "react-router"
 import { PetForm } from "./Pets/PetForm"
 import { PetList } from "./Pets/PetList"
+import { UserList } from "./users/UserList"
 
 export const ApplicationViews = () => {
 
@@ -24,7 +25,7 @@ export const ApplicationViews = () => {
         <div className="dashboard">
 
           <Route exact path="/">
-              
+              <UserList />
               <PetList />
 
           </Route>

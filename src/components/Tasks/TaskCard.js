@@ -24,9 +24,9 @@ export const TaskCard = ({ task, reload, handleDeleteTask, pet}) => {
         <div>
             <div className="card-info"> 
                 <h3>{(task.name)}</h3>
-                {task.userId === currentUser && <div className="complete"><label htmlFor="complete"> complete
+                <div className="complete"><label htmlFor="complete"> complete
                 <input onChange={checkChange} type="checkbox" className="complete" id="complete"></input>
-                </label> </div> }
+                </label> </div> 
                 {task.userId === currentUser && <div className="buttons">
                 <button className="button-delete" type="button" onClick={() => handleDeleteTask(task.id)}>Delete</button>
                 </div>}

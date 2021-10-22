@@ -61,17 +61,6 @@ export const PetForm = () => {
             
     }
 
-    // const toggle = () => {
-
-    //     setPet(!pet)
-    // }
-    
-    // const uploadPic = () => {
-    //     addPet({
-    //       image: image ? image : setPet.img
-    //     }).then(toggleEdit);
-    //   };
-
     return (
 
     <form className="petForm">
