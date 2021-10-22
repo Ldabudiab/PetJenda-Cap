@@ -1,20 +1,24 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { addPet } from "../../modules/PetManager";
+import axios, { Axios } from "axios";
+
 
 export const PetForm = () => {
-
+    const currentUser = parseInt(sessionStorage.getItem("petjenda_user"))
     const [pet, setPet] = useState({
         name: "",
         img: "",
     });
 
+    const [image, setImage] = useState("");
+    const [loading, setLoading] = useState(false);
 
     const history = useHistory();
 
     const handleControlledInputChange = (event) => {
     
-        const currentUser = parseInt(sessionStorage.getItem("petjenda_user"))
+        
 
         const newPet = { ...pet } 
 
@@ -26,12 +30,47 @@ export const PetForm = () => {
         setPet(newPet)
     }
 
+    const uploadImage = async (e) => {
+        debugger
+        const files = e.target.files;
+        const data = new FormData()
+        data.append("file", files[0])
+        data.append("upload_preset", "nfyot9vo")
+
+        // axios.post("https://api.cloudinary.com/v1_1/dzzvsnjjc/image/upload", formData)
+        const res = await  fetch(
+            "	https://api.cloudinary.com/v1_1/dzzvsnjjc/image/upload",
+            {
+              method: "POST",
+              body: data,
+            }
+          );
+        const file = await res.json();
+        setImage(file.secure_url);
+        setLoading(false);
+    };
+
     const handleClickSavePet = (event) => {
-        event.preventDefault() //Prevents the browser from submitting the form
-            addPet(pet)
+            const newPet = {
+                name: pet.name,
+                img: image,
+                userId: currentUser
+            }
+            addPet(newPet)
                 .then(() => history.push("/"))
             
     }
+
+    // const toggle = () => {
+
+    //     setPet(!pet)
+    // }
+    
+    // const uploadPic = () => {
+    //     addPet({
+    //       image: image ? image : setPet.img
+    //     }).then(toggleEdit);
+    //   };
 
     return (
 
@@ -47,12 +86,20 @@ export const PetForm = () => {
         <fieldset>
             <div className="form-group">
                 <label htmlFor="img">Pet Img: </label>
-                <input type="url" id="img" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Pet Img" value={pet.img}/>
+                <input type="file" name="file" onChange={(event)=> {uploadImage(event);}} required autoFocus className="form-control" />
+                
             </div>
         </fieldset>
        
         <button className="btn btn-primary"
-            onClick={handleClickSavePet}>
+            onClick={(evt) =>{
+                evt.preventDefault();
+                handleClickSavePet();
+                // uploadPic();
+                // toggle();
+
+            }
+            }>
             Save Event
         </button>
 

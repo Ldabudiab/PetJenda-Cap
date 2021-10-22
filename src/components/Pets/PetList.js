@@ -7,6 +7,8 @@ import "./PetCard.css"
 export const PetList = () => {
 
     const [pets, setPets] = useState([]);
+    
+
     const history =useHistory();
     
     
@@ -46,7 +48,12 @@ const handleDeletePet = id => {
         </div>
         <div id="pet-card-holder">
         { 
-        pets.map(pet => <PetCard key={pet.id} pet={pet} handleDeletePet={handleDeletePet}/>)}
+        pets.map(pet => <PetCard 
+            key={pet.id}
+            {...pet}
+           pet={pet}
+           
+           handleDeletePet={handleDeletePet}/>)}
         </div>
         </div>
         
