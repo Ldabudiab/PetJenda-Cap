@@ -1,34 +1,12 @@
-.sidebar {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-      margin: 0px;
-      padding: 0px;
-      width: 350px;
-      background-color: rgb(255, 255, 255);
-      position: fixed;
-      height: 100%;
-      overflow: auto;
+.navbar-1{
+
   
-    }
-    
-    .sidebar a {
-      display: block;
-      color: black;
-      padding: 16px;
-      text-decoration: none;
-    }
-     
-    .sidebar a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-    
-    .sidebar a:hover:not(.active) {
-      background-color: #555;
-      color: white;
-    }
+ 
+}
+
+
+
     
   
-    
+ 
    

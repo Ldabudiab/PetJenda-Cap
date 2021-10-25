@@ -31,13 +31,13 @@ export const PetForm = () => {
     }
 
     const uploadImage = async (e) => {
-        debugger
+       
         const files = e.target.files;
         const data = new FormData()
         data.append("file", files[0])
         data.append("upload_preset", "nfyot9vo")
 
-        // axios.post("https://api.cloudinary.com/v1_1/dzzvsnjjc/image/upload", formData)
+       
         const res = await  fetch(
             "	https://api.cloudinary.com/v1_1/dzzvsnjjc/image/upload",
             {
@@ -60,17 +60,6 @@ export const PetForm = () => {
                 .then(() => history.push("/"))
             
     }
-
-    // const toggle = () => {
-
-    //     setPet(!pet)
-    // }
-    
-    // const uploadPic = () => {
-    //     addPet({
-    //       image: image ? image : setPet.img
-    //     }).then(toggleEdit);
-    //   };
 
     return (
 

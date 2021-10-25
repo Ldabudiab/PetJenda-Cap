@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { PetCard } from "./PetCard";
-import { getAllPets, deletePets, update } from "../../modules/PetManager";
+import { getAllPets, deletePets } from "../../modules/PetManager";
 import { useHistory } from "react-router";
 import "./PetCard.css" 
 
@@ -37,8 +37,8 @@ const handleDeletePet = id => {
     <section className="section-content">
    
 
-        <div className="card-holder">
-        <div className="cardHolderHeader">
+        <div className="card--holder">
+        <div className="cardHolder-Header">
     
         <button type="button"
             className="button-7"

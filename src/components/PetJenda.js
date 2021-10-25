@@ -4,6 +4,7 @@ import { ApplicationViews } from "./ApplicationViews"
 import { Login } from "./auth/Login"
 import { Register } from "./auth/Register"
 import "./PetJenda.css"
+import { NavBar } from "./nav/NavBar"
 
 
 export const PetJenda = () => (
@@ -15,7 +16,7 @@ export const PetJenda = () => (
         if (sessionStorage.getItem("petjenda_user")) {
           return (
             <>
-              
+              <NavBar />
               <ApplicationViews />
             </>
           )
