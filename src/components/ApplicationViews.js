@@ -25,7 +25,7 @@ export const ApplicationViews = () => {
         <div className="dashboard">
 
           <Route exact path="/">
-              <UserList />
+              {/* <UserList /> */}
               <PetList />
 
           </Route>

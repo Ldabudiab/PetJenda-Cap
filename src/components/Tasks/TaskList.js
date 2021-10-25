@@ -5,7 +5,7 @@ import { useHistory, useParams } from "react-router";
 import "./Task.css"
 import { TaskForm } from "./TaskForm";
 import { Modal, ModalHeader, ModalBody } from 'reactstrap';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

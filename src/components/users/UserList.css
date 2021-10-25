@@ -1,0 +1,27 @@
+.user-container-cards {
+    padding: 20px;
+   border-radius: 10px;
+    margin: 10px;
+    width: 350px;
+    background-color: white;
+}
+
+
+.userSearch{
+
+    border-radius: 10px;
+    
+}
+
+.userlist{
+    
+   
+    padding: 10px;
+    border-radius: 10px;
+    border: solid #2b0855;
+    height: 70px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+

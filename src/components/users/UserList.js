@@ -2,7 +2,7 @@ import React from "react";
 import { getAllUsers } from "../../modules/UserManager";
 import { UserCard } from "./UserCard";
 import { useEffect, useState } from "react";
-
+import "./UserList.css"
 
 export const UserList = () => {
     
@@ -45,12 +45,9 @@ export const UserList = () => {
         
 
             <div className="user-container-cards">
-            <div className="usersearch">   
-            <label for="usersearch">Find a User</label>
-                 <input id="usersearch" type= "text" className="userSearch"
-                 value={searchTerms}
-                 onChange={(e) => setSearchTerms(e.target.value)}
-            /></div>
+            <div className="users-">   
+            <h6>Users</h6>
+            </div>
             <div className="userlist">
                 {filteredUsers.map(user => 
                 {if (currentUser === user.id){ 

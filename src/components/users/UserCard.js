@@ -8,7 +8,7 @@ export const UserCard = ({user}) => {
 
 return(
     <section className="userCard">
-        <h3 className="username">{user.name}</h3>
+        <h5 className="username">{user.name}</h5>
     </section>
 )
 

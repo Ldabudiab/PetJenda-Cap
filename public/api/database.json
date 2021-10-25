@@ -14,6 +14,16 @@
       "email": "saif@gmail.com",
       "name": "Saif Bimby",
       "id": 3
+    },
+    {
+      "email": "luke@poopy.com",
+      "name": "luke josephrandall",
+      "id": 4
+    },
+    {
+      "email": "brenda@gmail.com",
+      "name": "Brenda Long",
+      "id": 5
     }
   ],
   "meds": [],
@@ -22,9 +32,15 @@
     {
       "name": "Breakfast",
       "petId": 1,
-      "status": false,
+      "status": true,
       "userId": 1,
-      "id": 1
+      "id": 1,
+      "pet": {
+        "name": "jango",
+        "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
+        "userId": 1,
+        "id": 1
+      }
     },
     {
       "name": "Dinner",
@@ -61,17 +77,11 @@
       "id": 6
     },
     {
-      "name": "spanking",
-      "petId": 3,
-      "status": true,
-      "userId": 1,
-      "id": 7,
-      "pet": {
-        "name": "JR",
-        "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1634933014/sekiix1cbgac92rflynd.jpg",
-        "userId": 1,
-        "id": 3
-      }
+      "name": "Breakfast",
+      "petId": 1,
+      "status": false,
+      "userId": 4,
+      "id": 7
     }
   ],
   "friends": [],
@@ -89,8 +99,8 @@
       "id": 2
     },
     {
-      "name": "JR",
-      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1634933014/sekiix1cbgac92rflynd.jpg",
+      "name": "Breakfast",
+      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635192982/yoszpnxlmvrtrt3jydpz.jpg",
       "userId": 1,
       "id": 3
     }
