@@ -2,7 +2,7 @@ import React, {  useState } from "react"
 // took out an import for useRef to get rid of a warning-ER
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css"
-
+import logo from "../../images/logo.png"
 
 export const Login = () => {
     const [loginUser, setLoginUser] = useState({ email: "" })
@@ -40,6 +40,7 @@ export const Login = () => {
     }
 
     return (
+        
         <main className="container--login">
             <dialog className="dialog dialog--auth" open={existDialog}>
                 <div>User does not exist</div>
@@ -47,7 +48,7 @@ export const Login = () => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>PetJenda</h1>
+                <img src={logo} alt="petjenda-logo" className="app-logo" />
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
@@ -60,7 +61,7 @@ export const Login = () => {
                             onChange={handleInputChange} />
                     </fieldset>
                     <fieldset>
-                        <button type="submit">
+                        <button className="sign-in-button" type="submit">
                             Sign in
                         </button>
                     </fieldset>

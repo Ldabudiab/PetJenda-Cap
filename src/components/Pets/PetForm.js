@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { addPet } from "../../modules/PetManager";
 import axios, { Axios } from "axios";
-
+import "./PetCard.css"
 
 export const PetForm = () => {
     const currentUser = parseInt(sessionStorage.getItem("petjenda_user"))
@@ -67,14 +67,14 @@ export const PetForm = () => {
         <h2 className="petForm__title">New Pet</h2>
         <fieldset>
             <div className="form-group">
-                <label htmlFor="name">Pet name:</label>
+                <label className="labels" htmlFor="name">Pet name:</label>
                 <input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Pet Name" value={pet.name} />
             </div>
         </fieldset>
       
         <fieldset>
             <div className="form-group">
-                <label htmlFor="img">Pet Img: </label>
+                <label className="labels" htmlFor="img">Pet Img: </label>
                 <input type="file" name="file" onChange={(event)=> {uploadImage(event);}} required autoFocus className="form-control" />
                 
             </div>

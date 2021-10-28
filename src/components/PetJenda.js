@@ -16,8 +16,12 @@ export const PetJenda = () => (
         if (sessionStorage.getItem("petjenda_user")) {
           return (
             <>
-              <NavBar />
-              <ApplicationViews />
+            
+               
+                  <NavBar />              
+              
+                  <ApplicationViews />
+           
             </>
           )
         } else {

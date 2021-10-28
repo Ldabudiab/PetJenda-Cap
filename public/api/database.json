@@ -24,64 +24,37 @@
       "email": "brenda@gmail.com",
       "name": "Brenda Long",
       "id": 5
+    },
+    {
+      "email": "robin@gmail.com",
+      "name": "Robin Abudiab",
+      "id": 6
     }
   ],
   "meds": [],
-  "messages": [],
+  "messages": [
+    {
+      "id": 2,
+      "userId": 1,
+      "message": "hey",
+      "timestamp": "10/28/2021, 11:25:24 AM"
+    },
+    {
+      "id": 3,
+      "userId": 6,
+      "message": "hello",
+      "timestamp": "10/28/2021, 12:12:47 PM"
+    }
+  ],
   "tasks": [
     {
       "name": "Breakfast",
-      "petId": 1,
-      "status": true,
-      "userId": 1,
-      "id": 1,
-      "pet": {
-        "name": "jango",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
-        "userId": 1,
-        "id": 1
-      }
-    },
-    {
-      "name": "Dinner",
-      "petId": 1,
-      "status": true,
-      "userId": 1,
-      "id": 3,
-      "pet": {
-        "name": "jango",
-        "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
-        "userId": 1,
-        "id": 1
-      }
-    },
-    {
-      "name": "Breakfast",
-      "petId": 2,
-      "status": false,
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "name": "Dinner",
-      "petId": 2,
-      "status": false,
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "name": "meds",
-      "petId": 2,
-      "status": false,
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "name": "Breakfast",
+      "time": "7am - 8am",
       "petId": 1,
       "status": false,
-      "userId": 4,
-      "id": 7
+      "timeframe": "f",
+      "userId": 1,
+      "id": 1
     }
   ],
   "friends": [],
@@ -94,15 +67,9 @@
     },
     {
       "name": "Jace",
-      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1634922247/aw53ulesii20vdl7uwhi.jpg",
-      "userId": 1,
+      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635361444/feaekyfprqi6dm9qhjnm.jpg",
+      "userId": 6,
       "id": 2
-    },
-    {
-      "name": "Breakfast",
-      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635192982/yoszpnxlmvrtrt3jydpz.jpg",
-      "userId": 1,
-      "id": 3
     }
   ]
 }

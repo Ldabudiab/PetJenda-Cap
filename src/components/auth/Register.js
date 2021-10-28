@@ -58,13 +58,13 @@ export const Register = () => {
 
     return (
         <main style={{ textAlign: "center" }}>
-
+            
             <dialog className="dialog dialog--password" open={conflictDialog}>
                 <div>Account with that email address already exists</div>
                 <button className="button--close" onClick={e => setConflictDialog(false)}>Close</button>
             </dialog>
 
-            <form className="form--login" onSubmit={handleRegister}>
+            <form className="form--register" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Application Name</h1>
                 <fieldset>
                     <label htmlFor="firstName"> First Name </label>

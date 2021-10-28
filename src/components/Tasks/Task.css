@@ -17,12 +17,14 @@
 }
 
 .container-cards{
+    margin-left: 511px;
     display: flex;
     justify-content: space-evenly;
     background-color: white;
-    margin: 100px;
+    width: 1300px;
     padding: 50px;
     border-radius: 20px;
+    box-shadow: #310f3fd7 4px 4px 0 0;
 }
 .button-7{
     border-radius: 10px;
@@ -43,10 +45,9 @@
 }
 
 .cardHolderHeader{
-
-    display: flex;
-    justify-content: center;
+    margin-top: 200px;
     margin-bottom: 15px;
+    margin-left: 1124px;
 }
 
 .complete{
@@ -65,4 +66,9 @@
     border-radius: 8px;
     background-color: blueviolet;
     color: white;
+}
+
+.back-button{
+
+    margin-left: 922px;
 }

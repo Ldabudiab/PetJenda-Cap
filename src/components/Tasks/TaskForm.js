@@ -5,6 +5,7 @@ import {  addTask } from '../../modules/TaskManager'
 export const TaskForm = ({toggle, reload, pet}) => {
     const [task, setTask] = useState({
         name: "",
+        time: "",
         petId: parseInt(pet),
         status: false
         
@@ -38,6 +39,12 @@ export const TaskForm = ({toggle, reload, pet}) => {
 				<div className="form-group">
 					<label htmlFor="name">Task Name:</label>
 					<input type="text" id="name" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="Task Name" value={task.name} />
+				</div>
+			</fieldset>
+            <fieldset>
+				<div className="form-group">
+					<label htmlFor="time">Time Frame:</label>
+					<input type="text" id="time" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="10am - 11am" value={task.time} />
 				</div>
 			</fieldset>
 			<button className="btn btn-primary" onClick={handleClickSaveTask}>Save Task
