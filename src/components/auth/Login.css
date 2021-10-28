@@ -26,3 +26,21 @@
  a {
    color: white;
  }
+ 
+ .form--register{
+
+  display: flex;
+  margin-left: 710px;
+  margin-top: 300px;
+  width: 500px;
+  flex-direction: column;
+  
+ }
+
+ .sign-in-button{
+   border-radius: 10px;
+   margin-top: 5px;
+   border: none;
+   background-color: blueviolet;
+   color: white;
+ }

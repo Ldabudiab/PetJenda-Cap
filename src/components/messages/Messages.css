@@ -1,0 +1,61 @@
+.message-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color: #e0dce5;
+    height: 231px;
+    width: 350px;
+    margin-top: 30px;
+}
+
+
+.message-Form{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mess-card{
+    display: flex;
+    background-color: blueviolet;
+    background-clip: border-box;
+    border: 3px solid rgb(4 4 4 / 13%);
+    /* border-radius: .25rem; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    width: 200px;
+    height: 144px;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+.message--cards{
+
+    display: flex;
+
+}
+
+.message-header{
+
+    display: flex;
+    justify-content: center;
+}
+
+.button-add-message{
+
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    border: none;
+}
+
+.card-message-text{
+    font-size: 20px;
+}

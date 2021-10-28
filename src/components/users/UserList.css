@@ -1,7 +1,10 @@
 .user-container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
    border-radius: 10px;
-    margin: 10px;
+   margin-bottom: 65px;
     width: 350px;
     background-color: white;
 }
@@ -15,13 +18,11 @@
 
 .userlist{
     
-   
-    padding: 10px;
-    border-radius: 10px;
-    border: solid #2b0855;
-    height: 70px;
+    padding: 8px;
     overflow-y: scroll;
-    overflow-x: hidden;
-    
+    border-radius: 10px;
+    background-color: #e0dce5;
+    height: 130px;
+    width: 350px;
 }
 

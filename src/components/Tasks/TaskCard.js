@@ -24,6 +24,7 @@ export const TaskCard = ({ task, reload, handleDeleteTask, pet}) => {
         <div>
             <div className="card-info"> 
                 <h3>{(task.name)}</h3>
+                <p>{(task.time)}</p>
                 <div className="complete"><label htmlFor="complete"> complete
                 <input onChange={checkChange} type="checkbox" className="complete" id="complete"></input>
                 </label> </div> 

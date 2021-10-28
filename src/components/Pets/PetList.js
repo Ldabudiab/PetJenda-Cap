@@ -41,7 +41,7 @@ const handleDeletePet = id => {
         <div className="cardHolder-Header">
     
         <button type="button"
-            className="button-7"
+            className="button-8"
             onClick={() => {history.push("/pets/create")}}>
             Add pet
         </button>
