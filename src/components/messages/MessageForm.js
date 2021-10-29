@@ -43,7 +43,7 @@ export const MessageForm = () => {
 //return gives us the message form and allows us to add a message
     return (
         <form className="message-Form">
-            <h2 className="messageForm__title">New Message</h2>
+            <h2 className="message-Form__title">New Message</h2>
             <fieldset>
                 <div className="form-group">
                     <input type="text" id="message" onChange={handleControlledInputChange} required autoFocus className="form-control" placeholder="message" value={message.message}/>

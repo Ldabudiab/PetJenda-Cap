@@ -42,10 +42,16 @@
 
 }
 
+.message-Form__title{
+    margin-top: 300px;
+    color: white;
+}
+
 .message-header{
 
     display: flex;
     justify-content: center;
+    color: white;
 }
 
 .button-add-message{

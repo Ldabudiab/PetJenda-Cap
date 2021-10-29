@@ -41,3 +41,11 @@
   color: white;
   
 }
+
+.ms-b{
+
+  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 95px;
+}

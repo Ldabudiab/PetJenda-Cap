@@ -18,6 +18,7 @@ export const NavBar = () => {
         <img src={logo} alt="petjenda-logo" className="app-logo" />
     </div>
     <div> 
+      <h3 className="ms-b"> Message Board </h3>
     <MessageList />
              
     </div> 
