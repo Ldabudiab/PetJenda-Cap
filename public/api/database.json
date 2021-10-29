@@ -4,47 +4,11 @@
       "email": "ldabudiab@gmail.com",
       "name": "Leith Abudiab",
       "id": 1
-    },
-    {
-      "email": "Brooke@brooke.com",
-      "name": "brooke Lafferty",
-      "id": 2
-    },
-    {
-      "email": "saif@gmail.com",
-      "name": "Saif Bimby",
-      "id": 3
-    },
-    {
-      "email": "luke@poopy.com",
-      "name": "luke josephrandall",
-      "id": 4
-    },
-    {
-      "email": "brenda@gmail.com",
-      "name": "Brenda Long",
-      "id": 5
-    },
-    {
-      "email": "robin@gmail.com",
-      "name": "Robin Abudiab",
-      "id": 6
     }
   ],
   "meds": [],
   "messages": [
-    {
-      "id": 2,
-      "userId": 1,
-      "message": "hey",
-      "timestamp": "10/28/2021, 11:25:24 AM"
-    },
-    {
-      "id": 3,
-      "userId": 6,
-      "message": "hello",
-      "timestamp": "10/28/2021, 12:12:47 PM"
-    }
+  
   ],
   "tasks": [
     {
@@ -55,6 +19,14 @@
       "timeframe": "f",
       "userId": 1,
       "id": 1
+    },
+    {
+      "name": "Dinner",
+      "time": "4pm - 5pm",
+      "petId": 1,
+      "status": false,
+      "userId": 7,
+      "id": 2
     }
   ],
   "friends": [],
@@ -66,9 +38,9 @@
       "id": 1
     },
     {
-      "name": "Jace",
-      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635361444/feaekyfprqi6dm9qhjnm.jpg",
-      "userId": 6,
+      "name": "unclezaza",
+      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635469878/fbtpwkje7lwxpyqmjpiu.jpg",
+      "userId": 7,
       "id": 2
     }
   ]
