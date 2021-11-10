@@ -4,29 +4,88 @@
       "email": "ldabudiab@gmail.com",
       "name": "Leith Abudiab",
       "id": 1
+    },
+    {
+      "email": "Matt@gmail.com",
+      "name": "Matt France",
+      "id": 2
+    },
+    {
+      "email": "brenda@gmail.com",
+      "name": "Brenda Long",
+      "id": 3
+    },
+    {
+      "email": "scot@gmail.com",
+      "name": "Scott  (WithHair)",
+      "id": 4
+    },
+    {
+      "email": "S@gmail.com",
+      "name": "Squidney Crawdad",
+      "id": 5
     }
   ],
   "meds": [],
   "messages": [
-  
+    {
+      "id": 1,
+      "userId": 3,
+      "message": "Scoop tha poop",
+      "timestamp": "10/29/2021, 9:08:03 AM"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "message": "Let Jango inside",
+      "timestamp": "11/9/2021, 8:42:59 AM"
+    }
   ],
   "tasks": [
     {
       "name": "Breakfast",
       "time": "7am - 8am",
       "petId": 1,
-      "status": false,
+      "status": true,
       "timeframe": "f",
       "userId": 1,
-      "id": 1
+      "id": 1,
+      "pet": {
+        "name": "jango",
+        "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
+        "userId": 1,
+        "id": 1
+      }
+    },
+    {
+      "name": "Breakfast",
+      "time": "7am - 8am",
+      "petId": 1,
+      "status": true,
+      "userId": 1,
+      "id": 3,
+      "pet": {
+        "name": "jango",
+        "img": "https://images.squarespace-cdn.com/content/v1/5a2c764af43b551b489c752d/1519112468133-E9RK0LFT6BPF7OULE9MY/javacats28Oct20170073.jpg?format=1500w",
+        "userId": 1,
+        "id": 1
+      }
     },
     {
       "name": "Dinner",
       "time": "4pm - 5pm",
       "petId": 1,
       "status": false,
-      "userId": 7,
-      "id": 2
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "name": "Medication",
+      "time": "4pm - 5pm",
+      "petId": 2,
+      "status": false,
+      "userId": 1,
+      "id": 5
     }
   ],
   "friends": [],
@@ -38,9 +97,9 @@
       "id": 1
     },
     {
-      "name": "unclezaza",
-      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1635469878/fbtpwkje7lwxpyqmjpiu.jpg",
-      "userId": 7,
+      "name": "Jace",
+      "img": "https://res.cloudinary.com/dzzvsnjjc/image/upload/v1636471812/tgbhotiymcobacvwsgfk.jpg",
+      "userId": 1,
       "id": 2
     }
   ]
